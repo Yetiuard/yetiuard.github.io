@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spinning Donut</title>
+    <style>
+        body {
+            margin: 0; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            color: #dadada; 
+            background-color: #000000;
+        }
+        .model {
+            font-family: monospace;
+            white-space: pre;
+            font-size: 10px;
+        }
+        .controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .controls label, .controls input, .controls button {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .skin-btn {
+            display: none; /* Initially hide all skin buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="controls" id="controls">
+        <label for="donutColor">Donut Color:</label>
+        <input type="color" id="donutColor" value="#ffffff">
+        <button id="prideSkinBtn" class="skin-btn" onclick="applySkin('pride')">Pride donut</button>
+        <button id="pansexualSkinBtn" class="skin-btn" onclick="applySkin('pansexual')">Pansexual donut</button>
+        <button id="enbySkinBtn" class="skin-btn" onclick="applySkin('enby')">Enby donut</button>
+        <button id="transSkinBtn" class="skin-btn" onclick="applySkin('trans')">Trans donut</button>
+        <button id="bisexualSkinBtn" class="skin-btn" onclick="applySkin('bisexual')">Bisexual donut</button>
+        <button id="gayMensSkinBtn" class="skin-btn" onclick="applySkin('gayMens')">Gay Men's donut</button>
+        <button id="lesbianSkinBtn" class="skin-btn" onclick="applySkin('lesbian')">Lesbian donut</button>
+        <button id="asexualSkinBtn" class="skin-btn" onclick="applySkin('asexual')">Asexual donut</button>
+        <button id="rgbSkinBtn" class="skin-btn" onclick="applySkin('rgb')">RGB donut</button>
+        
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor">
+        
+        <label for="animationSpeed">Animation Speed (ms):</label>
+        <input type="number" id="animationSpeed" min="1" value="50">
+        
+        <label for="donutSize">Donut Size (px):</label>
+        <input type="number" id="donutSize" min="5" value="10">
+        
+        <button onclick="stopAnimation()">Stop Animation</button>
+        <button onclick="startAnimation()">Start Animation</button>
+    </div>
+    <div class="model"></div>
+<script>
+    let model = 0;
+    let animationSpeed = 50;
+    let basedAnimationSpeed = 50;
+    let stopA = false;
+    let timer;
+    let useCustomColorSkin = true;
+    let customColor = '#ffffff';
+    let currentSkin = 'custom';
+
+    const prideColors = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#24408E', '#732982'];
+    const pansexualColors = ['#FF1B8D', '#FFD800', '#1BB3FF'];
+    const enbyColors = ['#FFD600', '#FFFFFF', '#9C59D1', '#000000'];
+    const transColors = ['#55CDFC', '#F7A8B8', '#FFFFFF', '#F7A8B8', '#55CDFC'];
+    const bisexualColors = ['#D60270', '#D60270', '#9B4F96', '#0038A8', '#0038A8'];
+    const gayMensColors = ['#078E70', '#26CFAA', '#98E9C1', '#FFFFFF', '#7BADE2', '#5049CB', '#3D1A77'];
+    const lesbianColors = ['#D52D00', '#FF9B55', '#FFFFFF', '#D461A6', '#A50062'];
+    const asexualColors = ['#010101', '#A0A0A0', '#FFFFFF', '#9A0779'];
+
+    let hue = 0;
+
+    function balanceSpeed(model) {
+        animationSpeed = basedAnimationSpeed;
+    }
+
+    function generate(model) {
+        let i = 0;
+        let A = 1, B = 1;
+        if (model == 0) {
+            function generateFrame() {
+                let b = [];
+                let z = [];
+                A += 0.07;
+                B += 0.03;
+                let cA = Math.cos(A), sA = Math.sin(A),
+                    cB = Math.cos(B), sB = Math.sin(B);
+                for (let k = 0; k < 1760; k++) {
+                    b[k] = k % 80 == 79 ? "\n" : " ";
+                    z[k] = 0;
+                }
+                for (let j = 0; j < 6.28; j += 0.07) {
+                    let ct = Math.cos(j), st = Math.sin(j);
+                    for (i = 0; i < 6.28; i += 0.02) {
+                        let sp = Math.sin(i), cp = Math.cos(i), h = ct + 2,
+                            D = 1 / (sp * h * sA + st * cA + 5),
+                            t = sp * h * cA - st * sA;
+                        let x = 0 | (40 + 30 * D * (cp * h * cB - t * sB)),
+                            y = 0 | (12 + 15 * D * (cp * h * sB + t * cB)),
+                            o = x + 80 * y,
+                            N = 0 | (8 * ((st * sA - sp * ct * cA) * cB - sp * ct * sA - st * cA - cp * ct * sB));
+                        if (y < 22 && y >= 0 && x >= 0 && x < 79 && D > z[o]) {
+                            z[o] = D;
+                            b[o] = ".,-~:;=!*#$@"[N > 0 ? N : 0];
+                        }
+                    }
+                }
+
+                const lines = b.join("").split("\n");
+                let coloredOutput = "";
+                
+                if (useCustomColorSkin) {
+                    for (let i = 0; i < lines.length; i++) {
+                        coloredOutput += `<span style="color:${customColor}">${lines[i]}</span>\n`;
+                    }
+                } else {
+                    const colors = getCurrentSkinColors();
+                    for (let i = 0; i < lines.length; i++) {
+                        const color = currentSkin === 'rgb' ? `hsl(${hue}, 100%, 50%)` : colors[i % colors.length];
+                        coloredOutput += `<span style="color:${color}">${lines[i]}</span>\n`;
+                    }
+                }
+
+                document.querySelector('.model').innerHTML = coloredOutput;
+                if (!stopA) {
+                    timer = setTimeout(generateFrame, animationSpeed);
+                    hue += 1;
+                    if (hue >= 360) hue = 0;
+                }
+            }
+            generateFrame();
+        }
+    }
+
+    function applySkin(skin) {
+        useCustomColorSkin = skin === 'custom';
+        currentSkin = skin;
+    }
+
+    function getCurrentSkinColors() {
+        switch (currentSkin) {
+            case 'pride': return prideColors;
+            case 'pansexual': return pansexualColors;
+            case 'enby': return enbyColors;
+            case 'trans': return transColors;
+            case 'bisexual': return bisexualColors;
+            case 'gayMens': return gayMensColors;
+            case 'lesbian': return lesbianColors;
+            case 'asexual': return asexualColors;
+            case 'rgb': return [];
+            default: return [];
+        }
+    }
+
+    function updateCustomColor() {
+        customColor = document.getElementById('donutColor').value;
+        useCustomColorSkin = true;
+        currentSkin = 'custom';
+        document.querySelector('.model').style.color = customColor; // Apply custom color
+    }
+
+    function stopAnimation() {
+        stopA = true;
+        clearTimeout(timer);
+    }
+
+    function startAnimation() {
+        stopA = false;
+        generate(model);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        updateCustomColor();
+        startAnimation();
+    });
+
+    document.getElementById('bgColor').addEventListener('input', (e) => {
+        document.body.style.backgroundColor = e.target.value;
+    });
+
+    document.getElementById('animationSpeed').addEventListener('input', (e) => {
+        basedAnimationSpeed = parseInt(e.target.value, 10);
+        balanceSpeed(model);
+    });
+
+    document.getElementById('donutSize').addEventListener('input', (e) => {
+        document.getElementsByClassName('model')[0].style.fontSize = `${e.target.value}px`;
+    });
+
+    document.getElementById('donutColor').addEventListener('input', updateCustomColor);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'a') {
+            document.querySelectorAll('.skin-btn').forEach(btn => btn.style.display = btn.style.display === 'none' ? 'block' : 'none');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'x') {
+            const controls = document.getElementById('controls');
+            controls.style.display = controls.style.display === 'none' ? 'block' : 'none';
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+	        const prideBtn = document.getElementById('prideSkinBtn');
+        const pansexualBtn = document.getElementById('pansexualSkinBtn');
+        const enbyBtn = document.getElementById('enbySkinBtn');
+        const transBtn = document.getElementById('transSkinBtn');
+        const bisexualBtn = document.getElementById('bisexualSkinBtn');
+        const gayMensBtn = document.getElementById('gayMensSkinBtn');
+        const lesbianBtn = document.getElementById('lesbianSkinBtn');
+        const asexualBtn = document.getElementById('asexualSkinBtn');
+        
+        prideBtn.style.display = prideBtn.style.display === 'none' ? 'block' : 'none';
+        pansexualBtn.style.display = pansexualBtn.style.display === 'none' ? 'block' : 'none';
+        enbyBtn.style.display = enbyBtn.style.display === 'none' ? 'block' : 'none';
+        transBtn.style.display = transBtn.style.display === 'none' ? 'block' : 'none';
+        bisexualBtn.style.display = bisexualBtn.style.display === 'none' ? 'block' : 'none';
+        gayMensBtn.style.display = gayMensBtn.style.display === 'none' ? 'block' : 'none';
+        lesbianBtn.style.display = lesbianBtn.style.display === 'none' ? 'block' : 'none';
+        asexualBtn.style.display = asexualBtn.style.display === 'none' ? 'block' : 'none';
+        updateCustomColor(); // Call updateCustomColor function to set initial custom color
+        startAnimation(); // Start animation
+    });
+</script>
+</body>
+</html>
