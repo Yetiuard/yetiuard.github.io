@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 <title>Yetiuard's page</title>
 <link rel="stylesheet" href="common.css">
 <link rel="icon" href="./assets/favicon.png">
@@ -30,20 +31,27 @@ ul.buttons li {
 
 .title {
     font-size: 30pt;
-    background-color: #e417a0;
-    border-color: #ff49c2 #530037 #530037 #ff49c2;
+    background-color: #ffd8d8;
+    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
 }
 
 .title h1 {
     margin: 0;
     font-weight: normal;
-    color: #fff;
+    color: #000;
+}
+
+.title h2 {
+    margin: 0;
+    font-weight: normal;
+    color: #000;
 }
 
 .flashy {
     font-size: 18pt;
-    background-color: #60b;
-    border-color: #82f #204 #204 #82f;
+    background-color: #ffd8d8;
+    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
+    color: #000;
 }
 
 .flashy ul {
@@ -63,7 +71,7 @@ ul.buttons li {
 
 .flashy a:link,
 .flashy a:visited {
-    color: #fff;
+    color: #000;
     font-weight: normal;
 }
 
@@ -76,10 +84,14 @@ ul.buttons li {
     background: center / 100% 100% no-repeat url('assets/pointy.svg');
 }
 
+a{
+    color: #fff;
+}
+
 a+.moreinfo {
     position: absolute;
     background-color: #ffc;
-    color: #000;
+    color: #fff;
     border: 1px #000 solid;
     font-family: ui-sans-serif, sans-serif;
     font-size: 10pt;
@@ -97,49 +109,38 @@ a:not(:hover):not(:focus)+.moreinfo {
     font-family: "Comic Neue", "Atkinson Hyperlegible", sans-serif;
 }
 
+/*this comment happens to be on line 101, which is my favourite prime number!*/
 .cuddler-webring a {
-        /*this comment happens to be on line 101, which is my favourite prime number!*/
+        
     color: #303
 }
-
-.transring {
-    background-color: #313063;
-    border-color: #654c9e #242348 #242348 #654c9e;
-    width: 168px
-}
-
-#AdsDiv {
-    position: sticky;
-    top: 0
-}
-br {
-    line-height: 10px;
- }
 </style>
 <main>
+    
     Welcome to the web site of...<br>
     <img src="assets/yeti.png" alt width=500 height=500><br>
     <div class="title outset">
         <h1>Yetiuard</h1>
-        Certified Internet Yapper<br>
+        <h2>Certified Internet Yapper</h2>
         <a href="https://discord.gg/Y7VTwPev9f"><img  src="./assets/discord.gif" alt="Join the DISCORD SERVER!! :3"></a>
         <a href="https://www.instagram.com/yetiuard_/"><img  src="./assets/Instagram.png" alt="Follow my Instagram??!? :3"></a>
     </div><br>
 <nav class="flashy outset">
-        With such a diversity of webpages as...
+        Web... Pages!?
         <ul>
             <li><a href="./donut/">Donuts!</a>
                 <div class="moreinfo">Some little thing I made with spinning ASCII donuts! :3</div>
             </li>
         </ul></nav><br>
         <div class="cuddler-webring outset"><br><br><br><br><br><br><br><br>
-            <div id="app">damn your internet must be shit</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br><br><br><br><br><br><br><br><br></div>
+            <div id="app">damn your internet must be shit</div></h1><script>NekoType="rose"</script>
+            <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+            href="https://webneko.net">Neko</a></h1><center><a href="https://tamanotchi.world/13229c"><img src="https://tamanotchi.world/i2/13229" alt="It's tamaNOTchi! Click to feed!"></a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br><br><br><br></div>
     <div><a href="http://www.mabsland.com/Adoption.html">This site is rated <img src="./assets/badges/Censor_PGa.png" alt="Web PG"></a>
-        <br>(but links to other sites may be more explicit without warning)
     </div>
     <h2>Webrings</h2>
-    <p>A <dfn>webring</dfn> is a group of websites wherein each website links to two other websites, collectively forming a ring structure.
+    <p>A <dfn>webring</dfn> is a group of pages that link to one another creating a sort of page ring
         <br><br><map name="noairing">
 <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="15,15,124,66" alt="no ai webring" title="no ai webring">
 <area href="https://baccyflap.com/noai/?prv&s=yti" target="_top" shape="rect" coords="15,79,34,100" alt="previous" title="previous">
@@ -407,7 +408,19 @@ br {
             initialSkin: {
                 url: 
              "https://yetiuard.wtf/assets/skins/HelloKitty.wsz"
-            },}).renderWhenReady(app);</script>
+            },}).renderWhenReady(app);
+
+            window.addEventListener("load", (event) => {
+                new cursoreffects.fairyDustCursor({
+  colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"],
+});
+                new cursoreffects.rainbowCursor({
+  length: 60,
+  colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"],
+  size: 4,
+});
+
+});</script>
 		<footer>
 			<script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
 		</footer>
