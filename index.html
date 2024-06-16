@@ -114,7 +114,6 @@ a:not(:hover):not(:focus)+.moreinfo {
 }
 </style>
 <main>
-    <audio id="background-music" src="./assets/background.mp3" autoplay loop></audio>
     Welcome to the web site of...<br>
     <img src="assets/yeti.png" alt width=500 height=500><br>
     <div class="title outset">
@@ -130,8 +129,24 @@ a:not(:hover):not(:focus)+.moreinfo {
             <li><a href="./donut/">Donuts!</a>
                 <div class="moreinfo">Some little thing I made with spinning ASCII donuts! :3</div>
             </li>
-        </ul>
-    </nav>
+        </ul><div id="app"></div>
+        <script src="https://unpkg.com/webamp"></script>
+        <script>new Webamp({
+            initialTracks: [{
+                metaData: {
+                    artist: "KanYe West",
+                    title: "Hey Mama",
+                },
+              
+              // Be careful because mp3s use up a lot of space on your            account.
+                url: "https://yetiuard.wtf/assets/HeyMama.mp3",
+            }],
+            
+            initialSkin: {
+                url: 
+              // Find skins https://skins.webamp.org - download them and          host them on your website!
+             "https://yetiuard.wtf/assets/ascii.wsz"
+            },}).renderWhenReady(app);</script>
     <div><a href="http://www.mabsland.com/Adoption.html">This site is rated <img src="./assets/badges/Censor_PGa.png" alt="Web PG"></a>
         <br>(but links to other sites may be more explicit without warning)
     </div>
