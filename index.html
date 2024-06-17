@@ -1,426 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yetiuard's page</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://ikaroll.neocities.org/dsring/onion/onionring.css">
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-<title>Yetiuard's page</title>
-<link rel="stylesheet" href="common.css">
-<link rel="icon" href="./assets/favicon.png">
-<link rel="stylesheet" href="https://ikaroll.neocities.org/dsring/onion/onionring.css">
-<style>
-body {
-    text-align: center
-}
-
-main {
-    width: 100%;
-    background: none;
-    padding: 0
-}
-
-ul.buttons {
-    img {
-    width: 81px;
-    height: 33px;
-  }
-    padding: 0
-    
-}
-
-ul.buttons li {
-    display: inline
-}
-
-.title {
-    font-size: 30pt;
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-}
-
-.title h1 {
-    margin: 0;
-    font-weight: normal;
-    color: #000;
-}
-
-.title h2 {
-    margin: 0;
-    font-weight: normal;
-    color: #000;
-}
-
-.flashy {
-    font-size: 18pt;
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-    color: #000;
-}
-
-.flashy ul {
-    padding: 0;
-    margin: .6em 0 0;
-}
-
-.flashy li {
-    display: inline-block;
-    margin: -.6em -1.2em;
-}
-
-.flashy a {
-    padding: 1.2em 2.4em;
-    display: inline-block;
-}
-
-.flashy a:link,
-.flashy a:visited {
-    color: #000;
-    font-weight: normal;
-}
-
-.flashy a::after {
-    content: '!'
-}
-
-.flashy a:hover,
-.flashy a:focus {
-    background: center / 100% 100% no-repeat url('assets/pointy.svg');
-}
-
-a{
-    color: #fff;
-}
-
-a+.moreinfo {
-    position: absolute;
-    background-color: #ffc;
-    color: #fff;
-    border: 1px #000 solid;
-    font-family: ui-sans-serif, sans-serif;
-    font-size: 10pt;
-    padding: 2px;
-}
-
-a:not(:hover):not(:focus)+.moreinfo {
-    left: -9999px;
-}
-
-.cuddler-webring {
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-    color: #000;
-    font-family: "Comic Neue", "Atkinson Hyperlegible", sans-serif;
-}
-
-/*this comment happens to be on line 101, which is my favourite prime number!*/
-.cuddler-webring a {
-        
-    color: #303
-}
-</style>
-<main>
-    
-    Welcome to the web site of...<br>
-    <img src="assets/yeti.png" alt width=500 height=500><br>
-    <div class="title outset">
-        <h1>Yetiuard</h1>
-        <h2>Certified Internet Yapper</h2>
-        <a href="https://discord.gg/Y7VTwPev9f"><img  src="./assets/discord.gif" alt="Join the DISCORD SERVER!! :3"></a>
-        <a href="https://www.instagram.com/yetiuard_/"><img  src="./assets/Instagram.png" alt="Follow my Instagram??!? :3"></a>
-    </div><br>
-<nav class="flashy outset">
-        Web... Pages!?
-        <ul>
-            <li><a href="./donut/">Donuts!</a>
-                <div class="moreinfo">Some little thing I made with spinning ASCII donuts! :3</div>
-            </li>
-        </ul></nav><br>
-        <div class="cuddler-webring outset"><br><br><br><br><br><br><br><br>
-            <div id="app">damn your internet must be shit</div></h1><script>NekoType="rose"</script>
-            <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-            href="https://webneko.net">Neko</a></h1><center><a href="https://tamanotchi.world/13229c"><img src="https://tamanotchi.world/i2/13229" alt="It's tamaNOTchi! Click to feed!"></a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <style>
+        body {
+            text-align: center;
+        }
+        main {
+            width: 100%;
+            background: none;
+            padding: 0;
+        }
+        ul.buttons {
+            padding: 0;
+        }
+        ul.buttons li {
+            display: inline;
+        }
+        .title {
+            font-size: 30pt;
+            background-color: #ffd8d8;
+            border-color: #fff0f0 #d09090 #d09090 #fff0f0;
+        }
+        .title h1, .title h2 {
+            margin: 0;
+            font-weight: normal;
+            color: #000;
+        }
+        .ermwhatthemarnie {
+            font-size: 18pt;
+            background-color: #ffd8d8;
+            border-color: #fff0f0 #d09090 #d09090 #fff0f0;
+            color: #000;
+        }
+        .ermwhatthemarnie ul {
+            padding: 0;
+            margin: .6em 0 0;
+        }
+        .ermwhatthemarnie li {
+            display: inline-block;
+            margin: -.6em -1.2em;
+        }
+        .ermwhatthemarnie a {
+            padding: 1.2em 2.4em;
+            display: inline-block;
+        }
+        .ermwhatthemarnie a:link, .ermwhatthemarnie a:visited {
+            color: #000;
+            font-weight: normal;
+        }
+        .ermwhatthemarnie a::after {
+            content: '!';
+        }
+        .ermwhatthemarnie a:hover, .ermwhatthemarnie a:focus {
+            background: center / 100% 100% no-repeat url('assets/pointy.svg');
+        }
+        a {
+            color: #fff;
+        }
+        a:not(:hover):not(:focus) + .moreinfo {
+            left: -9999px;
+        }
+        .ermwhatthesigma {
+            background-color: #ffd8d8;
+            border-color: #fff0f0 #d09090 #d09090 #fff0f0;
+            color: #000;
+            font-family: "Comic Neue", "Atkinson Hyperlegible", sans-serif;
+        }
+        .ermwhatthesigma a {
+            color: #303;
+        }
+        ul.buttons {
+            img {
+                 width: 81px;
+                 height: 33px;
+                 }
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Welcome to the web site of...</p>
+        <img src="assets/yeti.png" alt="Yeti" width="500" height="500">
+        <div class="title outset">
+            <h1>Yetiuard</h1>
+            <h2>Certified Internet Yapper</h2>
+            <a href="https://discord.gg/Y7VTwPev9f">
+                <img src="./assets/discord.gif" alt="Join the DISCORD SERVER!! :3">
+            </a>
+            <a href="https://www.instagram.com/yetiuard_/">
+                <img src="./assets/Instagram.png" alt="Follow my Instagram??!? :3">
+            </a>
+        </div>
+        <br><nav class="ermwhatthemarnie outset">
+            <p>Web... Pages!?</p>
+            <ul>
+                <li><a href="./donut/">Donuts!</a></li>
+            </ul>
+        </nav>
+        <br><div class="ermwhatthesigma outset"><br><br><br><br><br><br><br><br>
+            <div id="app">damn your internet must be shit</div></h1></h1><center><a href="https://tamanotchi.world/13229c"><img src="https://tamanotchi.world/i2/13229" alt="It's tamaNOTchi! Click to feed!"></a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br><br><br><br><br></div>
-    <div><a href="http://www.mabsland.com/Adoption.html">This site is rated <img src="./assets/badges/Censor_PGa.png" alt="Web PG"></a>
-    </div>
-    <h2>Webrings</h2>
-    <p>A <dfn>webring</dfn> is a group of pages that link to one another creating a sort of page ring
-        <br><br><map name="noairing">
-<area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="15,15,124,66" alt="no ai webring" title="no ai webring">
-<area href="https://baccyflap.com/noai/?prv&s=yti" target="_top" shape="rect" coords="15,79,34,100" alt="previous" title="previous">
-<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="44,71,95,108" alt="random" title="random">
-<area href="https://baccyflap.com/noai/?nxt&s=yti" target="_top" shape="rect" coords="105,79,125,100" alt="next" title="next">
-</map>
-<img usemap="#noairing" src="https://baccyflap.com/noai/widget.gif" style="width:250px;height:124px" alt="an image of a little blue toy robot in a red-tinted circle made of art from all over the world. there's a red line, also made of art, running through the robot. next to it are the words NO AI WEBRING / HUMAN MADE 100% GUARANTEED and then two arrows, one pointing left, one right">
-<div class="cuddler-webring outset">
-    Part of the <a href=https://webring.dinhe.net>Retronaut Webring</a>!<br>
-    <a href='https://webring.dinhe.net/prev/https://yetiuard.wtf'>Previous</a>
-    <a href='https://webring.dinhe.net/next/https://yetiuard.wtf'>Next</a>
-    </div>  
-</p>
-<h2>Pending Webrings</h2>
-<p>I submitted applications to be in these webrings but have not heard back yet.
-<div class="cuddler-webring outset">
-    Part of the <a href=https://webring.bucketfish.me>Bucket Webring</a>!<br>
-    <a href='https://webring.bucketfish.me/redirect.html?to=prev&name=Yetiuard'>Previous</a>
-    <a href='https://webring.bucketfish.me/redirect.html?to=next&name=Yetiuard'>Next</a>
-    </div>  
-    <div class="cuddler-webring outset">
-        Part of the <a href='https://ghostring.neocities.org/'>Ghostring</a>!<br>
-        <a href='https://ghostring.neocities.org/yetiuard/previous'>Previous</a>
-        <a href='https://ghostring.neocities.org/yetiuard/next'>Next</a>
+        <div>
+            <a href="http://www.mabsland.com/Adoption.html">
+                <img src="./assets/badges/Censor_PGa.png" alt="Web PG">
+            </a>
         </div>
-        <div class="cuddler-webring outset">
-            Part of the <a href='https://silly.city/'>Silly City Webring</a>!<br>
-            <a href='https://silly.city/prev?user=yetiuard'>Previous</a>
-            <a href='https://silly.city/next?user=yetiuard'>Next</a>
+        <h2>Webrings</h2>
+        <p>A <i>webring</i> is a group of pages that link to one another creating a sort of page ring</p>
+        <map name="noairing">
+            <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="15,15,124,66" alt="no ai webring" title="no ai webring">
+            <area href="https://baccyflap.com/noai/?prv&s=yti" target="_top" shape="rect" coords="15,79,34,100" alt="previous" title="previous">
+            <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="44,71,95,108" alt="random" title="random">
+            <area href="https://baccyflap.com/noai/?nxt&s=yti" target="_top" shape="rect" coords="105,79,125,100" alt="next" title="next">
+        </map>
+        <img usemap="#noairing" src="https://baccyflap.com/noai/widget.gif" style="width:250px;height:124px" alt="an image of a little blue toy robot in a red-tinted circle made of art from all over the world. there's a red line, also made of art, running through the robot. next to it are the words NO AI WEBRING / HUMAN MADE 100% GUARANTEED and then two arrows, one pointing left, one right">
+        <br><div class="ermwhatthesigma outset">
+            <p>Part of the <a href="https://webring.dinhe.net">Retronaut Webring</a>!</p>
+            <a href="https://webring.dinhe.net/prev/https://yetiuard.wtf">Previous</a>
+            <a href="https://webring.dinhe.net/next/https://yetiuard.wtf">Next</a>
+        </div>
+        <h2>Pending Webrings</h2>
+        <p>I submitted applications to be in these webrings but have not heard back yet.</p>
+        <div class="ermwhatthesigma outset">
+            <p>Part of the <a href="https://webring.bucketfish.me">Bucket Webring</a>!</p>
+            <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=Yetiuard">Previous</a>
+            <a href="https://webring.bucketfish.me/redirect.html?to=next&name=Yetiuard">Next</a>
+        </div>
+        <div class="ermwhatthesigma outset">
+            <p>Part of the <a href="https://ghostring.neocities.org/">Ghostring</a>!</p>
+            <a href="https://ghostring.neocities.org/yetiuard/previous">Previous</a>
+            <a href="https://ghostring.neocities.org/yetiuard/next">Next</a>
+        </div>
+        <div class="ermwhatthesigma outset">
+            <p>Part of the <a href="https://silly.city/">Silly City Webring</a>!</p>
+            <a href="https://silly.city/prev?user=yetiuard">Previous</a>
+            <a href="https://silly.city/next?user=yetiuard">Next</a>
+        </div>
+        <div class="ermwhatthesigma outset">
+            <div id="queercoded">
+                <a href="https://isaacfish.neocities.org/webring/30.html">
+                    <img src="./assets/left.png" alt="left arrow">
+                </a>
+                <a href="https://isaacfish.neocities.org/webring/">
+                    <img src="./assets/queercoded.png" alt="Queer coded webring">
+                </a>
+                <a href="https://isaacfish.neocities.org/webring/32.html">
+                    <img src="./assets/right.png" alt="right arrow">
+                </a>
             </div>
-            <div class="cuddler-webring outset">
-            <div id="queercoded"><a href="https://isaacfish.neocities.org/webring/30.html"><img src="./assets/left.png" alt="left arrow"></a>&nbsp;<a href="https://isaacfish.neocities.org/webring/" ><img src="./assets/queercoded.png" alt="Queer coded webring"></a>&nbsp;<a href="https://isaacfish.neocities.org/webring/32.html"><img src="./assets/right.png" alt="right arrow"></a></div>
-            </div><center>
-                <div id='PikRing'>
-                    <link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/blue.css">
-                    <script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
-                    <script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
-                    </div>
-                        </center>
-                        <div id='dsring'>
-                            <script type="text/javascript" src="https://ikaroll.neocities.org/dsring/onion/onionring-variables.js"></script>
-                            <script type="text/javascript" src="https://ikaroll.neocities.org/dsring/onion/onionring-widget.js"></script>
-                            </div>
-                            
-                    
-</p>
-    <aside>
-        <h2>Buttons & Badges</h2>
-        <ul class="buttons">
-
-            <li><h3>My own button! Hotlinking allowed!</h3></li>
-            <li><img  src="./assets/yeti-HOTLINK-ALLOWED.gif"><br><br></li>
-            <li><img  src="./assets/badges/88x31nocookie.gif" alt="NO COOKIES ON THIS WEBSITE!!!!"></li>
-            <li><img  src="./assets/badges/alltits.png" alt="All gay tits and half a brain :3"></li>
-            <li><img  src="./assets/badges/animegay.gif" alt="Evangelion FTWWW"></li>
-            <li><a href="https://testicularcancersociety.org"><img  src="./assets/badges/barneyate.gif" alt="MY BALLS!!!!! NOOOO"></a></li>
-            <li><img  src="./assets/badges/bestvieweddesktop.gif" alt="Best viewed by a human"></li>
-            <li><img  src="./assets/badges/bob.gif" alt="also powered by gas"></li>
-            <li><img  src="./assets/badges/bvwac.gif" alt="BEST VIEWED THROUGH SOME RETINAS AMIRIGHTNOW??!!"></li>
-            <li><img  src="./assets/badges/catscape2.gif" alt="I love CarScape Central!"></li>
-			<li><img  src="./assets/badges/creep.png" alt="cause im a crepe im a weir dough"></li>
-			<li><img  src="./assets/badges/dumbass.gif" alt="Erm What the sigma"></li>
-			<li><a href="https://transactual.org.uk"><img  src="./assets/badges/eeveelutions-sylveon.gif" alt="Best Pokemon Ever amiright"></a></li>
-			<li><img  src="./assets/badges/emulate.gif" alt="Only if you legally own *wink* *wink*"></li>
-			<li><a href="https://daringfireball.net/2017/06/fuck_facebook"><img  src="./assets/badges/facebook.gif" alt="enshittify the web more please"></a></li>
-			<li><a href="https://archive.org"><img  src="./assets/badges/IA.gif" alt="internet's best resource. a lot of things would be lost media without them."></a></li>
-			<li><a href="https://yesterweb.org/no-to-web3/"><img  src="./assets/badges/keep.gif" alt="keep the internet free darngummit"></a></li>
-			<li><img  src="./assets/badges/kuromi%20virus.gif" alt="kuromi virus"></li>
-			<li><img  src="./assets/badges/maczilla.gif" alt="maczilla"></li>
-			<li><a href="https://mikumiku.neocities.org"><img  src="./assets/badges/miku.gif" alt="miku miku you can call me miku"></a></li>
-			<li><a href="https://flipnotering.neocities.org"><img  src="./assets/badges/misc-flipnote-anim.gif" alt="Bring Back FLIPNOTE!!!!"></a></li>
-			<li><img  src="./assets/badges/misc-homebrew.png" alt="homebrew forever. i bought my console ill do what i want with it."></li>
-			<li><img  src="./assets/badges/misc-iuse3.gif" alt=":3"></li>
-			<li><img  src="./assets/badges/misc-madewithn96.png" alt="misc-madewithn96"></li>
-			<li><a href="https://yesterweb.org/no-to-web3/"><img  src="./assets/badges/misc-nft.gif" alt="misc-nft"></a></li>
-			<li><a href="https://savewalterwhite.com"><img  src="./assets/badges/misc-save-walt.png" alt="misc-save-walt"></a></li>
-			<li><a href="https://github.com/microsoft/vscode"><img  src="./assets/badges/misc-visualstudio.png" alt="misc-visualstudio"></a></li>
-			<li><a href="https://afonsopacifer.github.io/n64-3d/index.html"><img  src="./assets/badges/N64.png" alt="N64"></a></li>
-			<li><img  src="./assets/badges/neko-b.gif" alt="neko-b"></li>
-			<li><a href="https://github.com/PabloMK7/citra"><img  src="./assets/badges/nintendo-hh-3ds.png" alt="nintendo-hh-3ds"></a></li>
-			<li><img  src="./assets/badges/paws.png" alt="paws"></li>
-			<li><img  src="./assets/badges/petscop_ended.png" alt="petscop_ended"></li>
-			<li><a href="https://pict.chat"><img  src="./assets/badges/pictochat.gif" alt="pictochat"></a></li>
-			<li><img  src="./assets/badges/piracy.gif" alt="piracy"></li>
-			<li><a href="https://yesterweb.org/"><img  src="./assets/badges/privacy.gif" alt="privacy"></a></li>
-			<li><a href="https://repair.eu"><img  src="./assets/badges/right2repair.png" alt="right2repair"></a></li>
-			<li><img  src="./assets/badges/seed.gif" alt="seed"></li>
-			<li><a href="https://www.fsf.org"><img  src="./assets/badges/stop%20microsoft.gif" alt="stop microsoft"></a></li>
-			<li><a href="https://suyu.dev"><img  src="./assets/badges/switch.png" alt="switch"></a></li>
-			<li><img  src="./assets/badges/thirdimpact.png" alt="thirdimpact"></li>
-			<li><a href="https://transactual.org.uk"><img  src="./assets/badges/trn.png" alt="trn"></a></li>
-			<li><a href="https://mikumiku.neocities.org"><img  src="./assets/badges/vocaloid.png" alt="vocaloid"></a></li>
-			<li><a href="https://dolphin-emu.org"><img  src="./assets/badges/wii.gif" alt="wii"></a></li>
-			<li><a href="https://88by31.neocities.org/"><img  src="./assets/badges/8831-8831.png" alt="88by31"></a></li>
-			<li><a href="http://www.anybrowser.org/campaign/"><img  src="./assets/badges/anyweb-8831.png" alt="ANY Web browser"></a></li>
-			<li><a href="https://en.wikipedia.org/wiki/Year_2038_problem"><img src="./assets/badges/2038-8831.gif"  alt="Are you ready? Year 2038"></a></li>
-			<li><img src="./assets/badges/acceptancenow-8831.png"  alt="Autistic acceptance now!"></a></li>
-			<li></li><img  src="./assets/badges/bookmark-8831.png" alt="Bookmark this page!"></a></li>
-			<li><img  src="./assets/badges/catscape.gif" alt="Catscape Meow!"></a></li>
-			<li><a href="https://delovely.neocities.org"><img  src="./assets/badges/delovely-8831.png" alt="delovely"></a></li>
-			<li><a href="https://gimp.org"><img  alt="Graphics by GIMP" style="margin-top:-3px" src="./assets/badges/gimp-9033.png"></a></li>
-			<li><img src="./assets/badges/html-8831.png"  alt="HTML: Learn it now!"></a></li>
-			<li><img src="./assets/badges/html2-8831.png"  alt="I dream in HTML"></a></li>
-			<li><img src="./assets/badges/8601-8831.gif"  alt="ISO 8601 now!"></a></li>
-			<li><img  src="./assets/badges/linux-8831.png" alt="Linux now!"></a></li>
-			<li><a href="http://www.libpng.org/pub/png"><img  alt="Portable Network Graphics Now!" src="./assets/badges/png-8831.png"></a></li>
-			<li><img src="./assets/badges/pride-8831.png"  alt="Pride now!"></a></li>
-			<li><img  src="./assets/badges/schoolsucks-8831.png" alt="School sucks forever!"></li>
-			<li><a href="https://yesterweb.org/no-to-web3/"><img src="./assets/badges/antinft-8831.png"  alt="This is an anti-NFT site"></a></li>
-			<li><a href="https://transrats.neocities.org/"><img   alt="Trans Rats" src="./assets/badges/transrats-8833.gif" style="margin:-1px 0"></a></li>
-			<li><a href="https://github.com/gorhill/uBlock#ublock-origin"><img  src="./assets/badges/ublocko-8831.png" alt="uBlock Origin now!"></a></li>
-			<li><a href="https://info.cern.ch/hypertext/WWW/TheProject.html"><img  alt="World Wide Web: Connecting people since 1991" src="./assets/badges/www-9731.png"></a></li>
-			<li><img  src="./assets/badges/ceasefire-now.gif"></li>
-			<li><a href="https://silly.city"><img  src="./assets/badges/silly.gif" alt="Silliest City ever"></a></li>
-			<li><img  src="./assets/badges/online.gif"></li>
-			<li><img  src="./assets/badges/drmario.gif"></li>
-			<li><img  src="./assets/badges/anarchynow.gif"></li>
-			<li><img  src="./assets/badges/estrogen.gif"></li>
-			<li><img  src="./assets/badges/chrome.gif"></li>
-            <li><img  src="./assets/badges/anythingbut.gif"></li>
-            <li><img  src="./assets/badges/apple.png"></li>
-            <li><img  src="./assets/badges/br.png"></li>
-            <li><img  src="./assets/badges/button_now.gif"></li>
-            <li><img  src="./assets/badges/chrome1.gif"></li>
-            <li><img  src="./assets/badges/copilot.png"></li>
-            <li><img  src="./assets/badges/fspeech.gif"></li>
-            <li><img  src="./assets/badges/ghpages.png"></li>
-            <li><img  src="./assets/badges/givebroslove.png"></li>
-            <li><img  src="./assets/badges/heart143.gif"></li>
-            <li><img  src="./assets/badges/ie1984.gif"></li>
-            <li><img  src="./assets/badges/milktea.gif"></li>
-            <li><img  src="./assets/badges/noai1.png"></li>
-            <li><img  src="./assets/badges/noai2.png"></li>
-            <li><img  src="./assets/badges/noweb3.gif"></li>
-            <li><img  src="./assets/badges/nowebp.gif"></li>
-            <li><img  src="./assets/badges/nyaabanner.gif"></li>
-            <li><img  src="./assets/badges/pickles.png"></li>
-            <li><img  src="./assets/badges/skruffy64.png"></li>
-            <li><img  src="./assets/badges/splatoon2.png"></li>
-            <li><img  src="./assets/badges/squarespace.png"></li>
-            <li><img  src="./assets/badges/wario.png"></li>
-            <li><img  src="./assets/badges/win20.png"></li>
-            <li><a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a></li>
-
-		</ul>
         </div>
-		</aside>
-		</main>
-        <script src="https://unpkg.com/webamp"></script>
-        <script>new Webamp({
-        initialTracks: [
-        {
-            metaData: {
-              artist: "甘き死よ、来たれ",
-              title: "Komm, Susser Tod (M-10 Director's Edit Version)",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/14KommSusserTod.mp3",
-          },
-          {
-            metaData: {
-              artist: "Kanye West",
-              title: "Hey Mama",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/1KanyeHeyMama.mp3",
-          },
-          {
-            metaData: {
-              title: "All Falls Down (Feat. Syleena Johnson)",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/2KanyeAllFallsDown.mp3",
-          },
-          {
-            metaData: {
-              title: "Barry Bonds (Feat. Lil' Wayne)",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/3KanyeBarryBonds.mp3",
-          },
-          {
-            metaData: {
-              title: "ARE WE STILL FRIENDS?",
-              artist: "Tyler, The Creator",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/4TylerTheCreatorAreWeStillFriends.mp3",
-          },
-          {
-            metaData: {
-              title: "Flashing Lights (Feat. Dwele)",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/5KanyeFlashingLights.mp3",
-          },
-          {
-            metaData: {
-              title: "All Of The Lights",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/6KanyeAllOfTheLights.mp3",
-          },
-          {
-            metaData: {
-              title: "Big Brother",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/7KanyeBigBrother.mp3",
-          },
-          {
-            metaData: {
-              title: "Can't Tell Me Nothing",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/8KanyeCantTellMeNothing.mp3",
-          },
-          {
-            metaData: {
-              title: "Through The Wire",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/9KanyeThroughTheWire.mp3",
-          },
-          {
-            metaData: {
-              title: "Devil In A New Dress (Feat. Rick Ross)",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/10KanyeDevilInANewDress.mp3",
-          },
-          {
-            metaData: {
-              title: "Good Morning",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/11KanyeGoodMorning.mp3",
-          },
-          {
-            metaData: {
-              title: "Runaway (Feat. Pusha T)",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/12KanyeRunaway.mp3",
-          },
-          {
-            metaData: {
-              title: "We Dont Care",
-              artist: "Kanye West",
-            },
-            url: "https://yetiuard.wtf/assets/music/webamp/13KanyeWeDontCare.mp3",
-          },
-        ],
-        availableSkins: [
-          {
-            url: "https://yetiuard.wtf/assets/skins/windblows98.wsz",
-            name: "WindBlows '98",
-          },
-          {
-            url: "https://yetiuard.wtf/assets/skins/HelloKitty.wsz",
-            name: "Hello Kitty",
-          },
-          {
-            url: "https://yetiuard.wtf/assets/skins/ascii.wsz",
-            name: "Ascii",
-          },
-          ],
+        <center>
+            <div id="PikRing">
+                <link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/blue.css">
+                <script src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
+                <script src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
+            </div>
+        </center>
+        <div id="dsring">
+            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-variables.js"></script>
+            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-widget.js"></script>
+        </div>
+        <aside>
+            <h2>Buttons & Badges</h2>
+            <ul class="buttons">
+                <li><h3>My own button! Hotlinking allowed!</h3></li>
+                <li><img src="./assets/yeti-HOTLINK-ALLOWED.gif" alt="Hotlinking allowed"></li>
+                <li><img src="./assets/badges/88x31nocookie.gif" alt="NO COOKIES ON THIS WEBSITE!!!!"></li>
+                <li><img src="./assets/badges/alltits.png" alt="All gay tits and half a brain :3"></li>
+                <li><img src="./assets/badges/animegay.gif" alt="Evangelion FTWWW"></li>
+                <li><a href="https://testicularcancersociety.org"><img src="./assets/badges/barneyate.gif" alt="MY BALLS!!!!! NOOOO"></a></li>
+                <li><img src="./assets/badges/bestvieweddesktop.gif" alt="Best viewed by a human"></li>
+                <li><img src="./assets/badges/bob.gif" alt="also powered by gas"></li>
+                <li><img src="./assets/badges/bvwac.gif" alt="BEST VIEWED THROUGH SOME RETINAS AMIRIGHTNOW??!!"></li>
+                <li><img src="./assets/badges/catscape2.gif" alt="I love CarScape Central!"></li>
+                <li><img src="./assets/badges/creep.png" alt="cause im a crepe im a weir dough"></li>
+                <li><img src="./assets/badges/dumbass.gif" alt="Erm What the sigma"></li>
+                <li><a href="https://transactual.org.uk"><img src="./assets/badges/eeveelutions-sylveon.gif" alt="Best Pokemon Ever amiright"></a></li>
+                <li><img src="./assets/badges/emulate.gif" alt="Only if you legally own *wink* *wink*"></li>
+                <li><a href="https://daringfireball.net/2017/06/fuck_facebook"><img src="./assets/badges/facebook.gif" alt="enshittify the web more please"></a></li>
+                <li><a href="https://archive.org"><img src="./assets/badges/IA.gif" alt="internet's best resource. a lot of things would be lost media without them."></a></li>
+                <li><a href="https://yesterweb.org/no-to-web3/"><img src="./assets/badges/keep.gif" alt="keep the internet free darngummit"></a></li>
+                <li><img src="./assets/badges/kuromi%20virus.gif" alt="kuromi virus"></li>
+                <li><img src="./assets/badges/maczilla.gif" alt="maczilla"></li>
+                <li><a href="https://mikumiku.neocities.org"><img src="./assets/badges/miku.gif" alt="miku miku you can call me miku"></a></li>
+                <li><a href="https://flipnotering.neocities.org"><img src="./assets/badges/misc-flipnote-anim.gif" alt="Bring Back FLIPNOTE!!!!"></a></li>
+                <li><img src="./assets/badges/misc-homebrew.png" alt="homebrew forever. i bought my console ill do what i want with it."></li>
+                <li><img src="./assets/badges/misc-iuse3.gif" alt=":3"></li>
+                <li><img src="./assets/badges/misc-madewithn96.png" alt="misc-madewithn96"></li>
+                <li><a href="https://yesterweb.org/no-to-web3/"><img src="./assets/badges/misc-nft.gif" alt="misc-nft"></a></li>
+                <li><a href="https://savewalterwhite.com"><img src="./assets/badges/misc-save-walt.png" alt="misc-save-walt"></a></li>
+                <li><a href="https://github.com/microsoft/vscode"><img src="./assets/badges/misc-visualstudio.png" alt="misc-visualstudio"></a></li>
+                <li><a href="https://afonsopacifer.github.io/n64-3d/index.html"><img src="./assets/badges/N64.png" alt="N64"></a></li>
+                <li><img src="./assets/badges/neko-b.gif" alt="neko-b"></li>
+                <li><a href="https://github.com/PabloMK7/citra"><img src="./assets/badges/nintendo-hh-3ds.png" alt="nintendo-hh-3ds"></a></li>
+                <li><img src="./assets/badges/paws.png" alt="paws"></li>
+                <li><img src="./assets/badges/petscop_ended.png" alt="petscop_ended"></li>
+                <li><a href="https://pict.chat"><img src="./assets/badges/pictochat.gif" alt="pictochat"></a></li>
+                <li><img src="./assets/badges/piracy.gif" alt="piracy"></li>
+                <li><a href="https://yesterweb.org/"><img src="./assets/badges/privacy.gif" alt="privacy"></a></li>
+                <li><a href="https://repair.eu"><img src="./assets/badges/right2repair.png" alt="right2repair"></a></li>
+                <li><img src="./assets/badges/seed.gif" alt="seed"></li>
+                <li><a href="https://www.fsf.org"><img src="./assets/badges/stop%20microsoft.gif" alt="stop microsoft"></a></li>
+                <li><a href="https://suyu.dev"><img src="./assets/badges/switch.png" alt="switch"></a></li>
+                <li><img src="./assets/badges/thirdimpact.png" alt="thirdimpact"></li>
+                <li><a href="https://transactual.org.uk"><img src="./assets/badges/trn.png" alt="trn"></a></li>
+                <li><a href="https://mikumiku.neocities.org"><img src="./assets/badges/vocaloid.png" alt="vocaloid"></a></li>
+                <li><a href="https://dolphin-emu.org"><img src="./assets/badges/wii.gif" alt="wii"></a></li>
+                <li><a href="https://88by31.neocities.org/"><img src="./assets/badges/8831-8831.png" alt="88by31"></a></li>
+                <li><a href="http://www.anybrowser.org/campaign/"><img src="./assets/badges/anyweb-8831.png" alt="ANY Web browser"></a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Year_2038_problem"><img src="./assets/badges/2038-8831.gif" alt="Are you ready? Year 2038"></a></li>
+                <li><img src="./assets/badges/acceptancenow-8831.png" alt="Autistic acceptance now!"></li>
+                <li><img src="./assets/badges/bookmark-8831.png" alt="Bookmark this page!"></li>
+                <li><img src="./assets/badges/catscape.gif" alt="Catscape Meow!"></li>
+                <li><a href="https://delovely.neocities.org"><img src="./assets/badges/delovely-8831.png" alt="delovely"></a></li>
+                <li><a href="https://gimp.org"><img alt="Graphics by GIMP" style="margin-top:-3px" src="./assets/badges/gimp-9033.png"></a></li>
+                <li><img src="./assets/badges/html-8831.png" alt="HTML: Learn it now!"></li>
+                <li><img src="./assets/badges/html2-8831.png" alt="I dream in HTML"></li>
+                <li><img src="./assets/badges/8601-8831.gif" alt="ISO 8601 now!"></li>
+                <li><img src="./assets/badges/linux-8831.png" alt="Linux now!"></li>
+                <li><a href="http://www.libpng.org/pub/png"><img alt="Portable Network Graphics Now!" src="./assets/badges/png-8831.png"></a></li>
+                <li><img src="./assets/badges/pride-8831.png" alt="Pride now!"></li>
+                <li><img src="./assets/badges/schoolsucks-8831.png" alt="School sucks forever!"></li>
+                <li><a href="https://yesterweb.org/no-to-web3/"><img src="./assets/badges/antinft-8831.png" alt="This is an anti-NFT site"></a></li>
+                <li><a href="https://transrats.neocities.org/"><img alt="Trans Rats" src="./assets/badges/transrats-8833.gif" style="margin:-1px 0"></a></li>
+                <li><a href="https://github.com/gorhill/uBlock#ublock-origin"><img src="./assets/badges/ublocko-8831.png" alt="uBlock Origin now!"></a></li>
+                <li><a href="https://info.cern.ch/hypertext/WWW/TheProject.html"><img alt="World Wide Web: Connecting people since 1991" src="./assets/badges/www-9731.png"></a></li>
+                <li><img src="./assets/badges/ceasefire-now.gif"></li>
+                <li><a href="https://silly.city"><img src="./assets/badges/silly.gif" alt="Silliest City ever"></a></li>
+                <li><img src="./assets/badges/online.gif"></li>
+                <li><img src="./assets/badges/drmario.gif"></li>
+                <li><img src="./assets/badges/anarchynow.gif"></li>
+                <li><img src="./assets/badges/estrogen.gif"></li>
+                <li><img src="./assets/badges/chrome.gif"></li>
+                <li><img src="./assets/badges/anythingbut.gif"></li>
+                <li><img src="./assets/badges/apple.png"></li>
+                <li><img src="./assets/badges/br.png"></li>
+                <li><img src="./assets/badges/button_now.gif"></li>
+                <li><img src="./assets/badges/chrome1.gif"></li>
+                <li><img src="./assets/badges/copilot.png"></li>
+                <li><img src="./assets/badges/fspeech.gif"></li>
+                <li><img src="./assets/badges/ghpages.png"></li>
+                <li><img src="./assets/badges/givebroslove.png"></li>
+                <li><img src="./assets/badges/heart143.gif"></li>
+                <li><img src="./assets/badges/ie1984.gif"></li>
+                <li><img src="./assets/badges/milktea.gif"></li>
+                <li><img src="./assets/badges/noai1.png"></li>
+                <li><img src="./assets/badges/noai2.png"></li>
+                <li><img src="./assets/badges/noweb3.gif"></li>
+                <li><img src="./assets/badges/nowebp.gif"></li>
+                <li><img src="./assets/badges/nyaabanner.gif"></li>
+                <li><img src="./assets/badges/pickles.png"></li>
+                <li><img src="./assets/badges/skruffy64.png"></li>
+                <li><img src="./assets/badges/splatoon2.png"></li>
+                <li><img src="./assets/badges/squarespace.png"></li>
+                <li><img src="./assets/badges/wario.png"></li>
+                <li><img src="./assets/badges/win20.png"></li>
+                <li><a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" alt="dimden"></a></li>
+            </ul>
+        </aside>
+    </main>
+    <script src="https://unpkg.com/webamp"></script>
+    <script>
+        new Webamp({
+            initialTracks: [
+                {
+                    metaData: { artist: "甘き死よ、来たれ", title: "Komm, Susser Tod (M-10 Director's Edit Version)" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/14KommSusserTod.mp3"
+                },
+                {
+                    metaData: { artist: "Kanye West", title: "Hey Mama" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/1KanyeHeyMama.mp3"
+                },
+                {
+                    metaData: { title: "All Falls Down (Feat. Syleena Johnson)", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/2KanyeAllFallsDown.mp3"
+                },
+                {
+                    metaData: { title: "Barry Bonds (Feat. Lil' Wayne)", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/3KanyeBarryBonds.mp3"
+                },
+                {
+                    metaData: { title: "ARE WE STILL FRIENDS?", artist: "Tyler, The Creator" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/4TylerTheCreatorAreWeStillFriends.mp3"
+                },
+                {
+                    metaData: { title: "Flashing Lights (Feat. Dwele)", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/5KanyeFlashingLights.mp3"
+                },
+                {
+                    metaData: { title: "All Of The Lights", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/6KanyeAllOfTheLights.mp3"
+                },
+                {
+                    metaData: { title: "Big Brother", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/7KanyeBigBrother.mp3"
+                },
+                {
+                    metaData: { title: "Can't Tell Me Nothing", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/8KanyeCantTellMeNothing.mp3"
+                },
+                {
+                    metaData: { title: "Through The Wire", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/9KanyeThroughTheWire.mp3"
+                },
+                {
+                    metaData: { title: "Devil In A New Dress (Feat. Rick Ross)", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/10KanyeDevilInANewDress.mp3"
+                },
+                {
+                    metaData: { title: "Good Morning", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/11KanyeGoodMorning.mp3"
+                },
+                {
+                    metaData: { title: "Runaway (Feat. Pusha T)", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/12KanyeRunaway.mp3"
+                },
+                {
+                    metaData: { title: "We Dont Care", artist: "Kanye West" },
+                    url: "https://yetiuard.wtf/assets/music/webamp/13KanyeWeDontCare.mp3"
+                }
+            ],
+            availableSkins: [
+                { url: "https://yetiuard.wtf/assets/skins/windblows98.wsz", name: "WindBlows '98" },
+                { url: "https://yetiuard.wtf/assets/skins/HelloKitty.wsz", name: "Hello Kitty" },
+                { url: "https://yetiuard.wtf/assets/skins/ascii.wsz", name: "Ascii" }
+            ],
             initialSkin: {
-                url: 
-             "https://yetiuard.wtf/assets/skins/HelloKitty.wsz"
-            },}).renderWhenReady(app);
+                url: "https://yetiuard.wtf/assets/skins/HelloKitty.wsz"
+            }
+        }).renderWhenReady(app);
 
-            window.addEventListener("load", (event) => {
-                new cursoreffects.fairyDustCursor({
-  colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"],
-});
-                new cursoreffects.rainbowCursor({
-  length: 60,
-  colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"],
-  size: 4,
-});
-
-});</script>
-		<footer>
-			<script type="text/javascript" src="https://counter.websiteout.com/js/2/0/0/0"></script>
-		</footer>
+        window.addEventListener("load", () => {
+            new cursoreffects.fairyDustCursor({
+                colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"]
+            });
+            new cursoreffects.rainbowCursor({
+                length: 60,
+                colors: ["#D560A8", "#E5AECE", "#FFFFFF", "#56CFF8", "#FFFFFF", "#E5AECE", "#D560A8"],
+                size: 4
+            });
+        });
+    </script>
+    <script>NekoType="rose";</script>
+    <script src="https://webneko.net/n20171213.js"></script>
+    <footer>
+        <script src="https://counter.websiteout.com/js/2/0/0/0"></script>
+    </footer>
+</body>
+</html>
