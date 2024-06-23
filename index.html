@@ -4,235 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yetiuard's page</title>
-    <link rel="stylesheet" href="common.css">
     <link rel="icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://ikaroll.neocities.org/dsring/onion/onionring.css">
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <style>
-  body {
-    text-align: center;
-}
-
-main {
-    width: 100%;
-    background: none;
-    padding: 0;
-}
-
-ul.buttons {
-    padding: 0;
-}
-
-ul.buttons li {
-    display: inline;
-}
-
-.title {
-    font-size: 30pt;
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-}
-
-.title h1,
-.title h2 {
-    margin: 0;
-    font-weight: normal;
-    color: #000;
-}
-
-.ermwhatthemarnie {
-    font-size: 18pt;
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-    color: #000;
-}
-
-.ermwhatthemarnie li {
-    display: inline-block;
-    margin: -.6em -1.2em;
-}
-
-.ermwhatthemarnie a {
-    padding: 1.2em 2.4em;
-    display: inline-block;
-}
-
-.ermwhatthemarnie a:link,
-.ermwhatthemarnie a:visited {
-    color: #000;
-    font-weight: normal;
-}
-
-.ermwhatthemarnie a::after {
-    content: '!';
-}
-
-.ermwhatthemarnie a:hover,
-.ermwhatthemarnie a:focus {
-    background: center / 100% 100% no-repeat url('assets/pointy.svg');
-}
-
-a {
-    color: #fff;
-}
-
-a:not(:hover):not(:focus) + .moreinfo {
-    left: -9999px;
-}
-
-.ermwhatthesigma {
-    background-color: #ffd8d8;
-    border-color: #fff0f0 #d09090 #d09090 #fff0f0;
-    color: #000;
-    font-family: "Comic Neue", "Atkinson Hyperlegible", sans-serif;
-    margin-top: 0; /* Added to remove awkward space */
-    padding-top: 0; /* Added to remove awkward space */
-}
-
-.ermwhatthesigma a {
-    color: #303;
-}
-
-ul.buttons img {
-    width: 81px;
-    height: 33px;
-    padding: 0;
-}
-
-        @-webkit-keyframes snowflakes-fall {
-		0% {
-			top: -10%
-		}
-		100% {
-			top: 100%
-		}
-	}
-	
-	@-webkit-keyframes snowflakes-shake {
-		0%,
-		100% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0)
-		}
-		50% {
-			-webkit-transform: translateX(80px);
-			transform: translateX(80px)
-		}
-	}
-	
-	@keyframes snowflakes-fall {
-		0% {
-			top: -10%
-		}
-		100% {
-			top: 100%
-		}
-	}
-	
-	@keyframes snowflakes-shake {
-		0%,
-		100% {
-			transform: translateX(0)
-		}
-		50% {
-			transform: translateX(80px)
-		}
-	}
-	
-	.snowflake {
-		position: fixed;
-		top: -10%;
-		z-index: 9999;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		-webkit-animation-name: snowflakes-fall, snowflakes-shake;
-		-webkit-animation-duration: 10s, 3s;
-		-webkit-animation-timing-function: linear, ease-in-out;
-		-webkit-animation-iteration-count: infinite, infinite;
-		-webkit-animation-play-state: running, running;
-		animation-name: snowflakes-fall, snowflakes-shake;
-		animation-duration: 10s, 3s;
-		animation-timing-function: linear, ease-in-out;
-		animation-iteration-count: infinite, infinite;
-		animation-play-state: running, running
-	}
-	
-	.snowflake:nth-of-type(0) {
-		left: 1%;
-		-webkit-animation-delay: 0s, 0s;
-		animation-delay: 0s, 0s
-	}
-	
-	.snowflake:nth-of-type(1) {
-		left: 10%;
-		-webkit-animation-delay: 1s, 1s;
-		animation-delay: 1s, 1s
-	}
-	
-	.snowflake:nth-of-type(2) {
-		left: 20%;
-		-webkit-animation-delay: 6s, .5s;
-		animation-delay: 6s, .5s
-	}
-	
-	.snowflake:nth-of-type(3) {
-		left: 30%;
-		-webkit-animation-delay: 4s, 2s;
-		animation-delay: 4s, 2s
-	}
-	
-	.snowflake:nth-of-type(4) {
-		left: 40%;
-		-webkit-animation-delay: 2s, 2s;
-		animation-delay: 2s, 2s
-	}
-	
-	.snowflake:nth-of-type(5) {
-		left: 50%;
-		-webkit-animation-delay: 8s, 3s;
-		animation-delay: 8s, 3s
-	}
-	
-	.snowflake:nth-of-type(6) {
-		left: 60%;
-		-webkit-animation-delay: 6s, 2s;
-		animation-delay: 6s, 2s
-	}
-	
-	.snowflake:nth-of-type(7) {
-		left: 70%;
-		-webkit-animation-delay: 2.5s, 1s;
-		animation-delay: 2.5s, 1s
-	}
-	
-	.snowflake:nth-of-type(8) {
-		left: 80%;
-		-webkit-animation-delay: 1s, 0s;
-		animation-delay: 1s, 0s
-	}
-	
-	.snowflake:nth-of-type(9) {
-		left: 90%;
-		-webkit-animation-delay: 3s, 1.5s;
-		animation-delay: 3s, 1.5s
-	}
-	
-	.snowflake:nth-of-type(10) {
-		left: 25%;
-		-webkit-animation-delay: 2s, 0s;
-		animation-delay: 2s, 0s
-	}
-	
-	.snowflake:nth-of-type(11) {
-		left: 65%;
-		-webkit-animation-delay: 4s, 2.5s;
-		animation-delay: 4s, 2.5s
-	}
-    a, u {
-  text-decoration: none;
-}
+.ermwhatthemarnie a:link,.ermwhatthemarnie a:visited,.title h1,.title h2{font-weight:400;color:#000}body,pre{background-color:#000}body,footer{text-align:center}.outset{margin:8pt;display:inline-block;padding:10pt;border:18pt solid}.ermwhatthemarnie,.ermwhatthesigma,.title{background-color:#ffd8d8;border-color:#fff0f0 #d09090 #d09090 #fff0f0}body{font-family:Consolas;color:#fff;background-image:url(assets/background.png);font-size:10pt}ul.buttons li{display:inline}.title{font-size:30pt}.title h1,.title h2{margin:0}.ermwhatthemarnie{font-size:18pt;color:#000}.ermwhatthemarnie li{display:inline-block;margin:-.6em -1.2em}.ermwhatthemarnie a{padding:1.2em 2.4em;display:inline-block}.ermwhatthemarnie a::after{content:'!'}.ermwhatthemarnie a:focus,.ermwhatthemarnie a:hover{background:url('assets/pointy.svg') center/100% 100% no-repeat}a:not(:hover):not(:focus)+.moreinfo{left:-9999px}.ermwhatthesigma{color:#000;font-family:"Comic Neue","Atkinson Hyperlegible",sans-serif;margin-top:0;padding-top:0}.ermwhatthesigma a{color:#303}ul.buttons img{width:81px;height:33px;padding:0}@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:first-of-type{left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}a,u{text-decoration:none}code{font-family:monospace;font-size:.9em;color:#ff3}pre{overflow-x:auto;border:1px solid #f0f;padding:3px}h1,h2,h3,h4,h5,h6{color:#fff;font-weight:700}a{color:#7a28ff;text-decoration:underline;font-weight:400}a:focus,a:hover{font-weight:700}a:focus img{background-color:#ff28ff;padding:2px}img,svg{max-width:100%;height:auto;image-rendering:pixelated}del{text-decoration:line-through}ins::before{content:"Update: "}ins[datetime]::before{content:"Update " attr(datetime) ": "}table{border-collapse:collapse}td{border:1px solid #fff}figure img{display:block}.alignright{text-align:right}
     </style>
 </head>
 <body>
@@ -240,7 +16,6 @@ ul.buttons img {
         <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div><div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div><div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>  <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>  <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>  <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>  <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>  <div class="snowflake"><img src="https://yetiuard.wtf/assets/star.png" style="width:20px;"></div>
   </div>
     <main>
-        <p>Welcome to the web site of...</p>
         <img src="assets/yeti.png" alt="Yeti" width="500" height="500"><br>
         <div class="title outset">
             <h1>Yetiuard</h1>
@@ -253,9 +28,9 @@ ul.buttons img {
             <p>Web... Pages!?</p>
                 <li><a href="./donut/">Donuts!</a></li>
         </nav>
-        <br><div class="ermwhatthesigma outset"><br><br><br><br><br><br><br><br><br>
-            <div id="app">damn your internet must be shit</div></h1></h1><center><a href="https://tamanotchi.world/13229c"><img src="https://tamanotchi.world/i2/13229" alt="It's tamaNOTchi! Click to feed!"></a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br><br><br><br><br><br></div>
+        <br><div class="ermwhatthesigma outset"><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="app">damn your internet must be shit</div></h1></h1><center><a href="https://tamanotchi.world/13229c"><img src="https://tamanotchi.world/i2/13229" alt="It's tamaNOTchi! Click to feed!"></a></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br><br><br><br><br><br></div>
         <div>
             <a href="http://www.mabsland.com/Adoption.html">
                 <img src="./assets/badges/Censor_PGa.png" alt="Web PG">
@@ -284,7 +59,12 @@ ul.buttons img {
             <p>Part of the <a href="https://ghostring.neocities.org/">Ghostring</a>!</p>
             <a href="https://ghostring.neocities.org/yetiuard/previous">Previous</a>
             <a href="https://ghostring.neocities.org/yetiuard/next">Next</a>
+        </div>        <div id="dsring" class="ermwhatthesigma outset">
+            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-variables.js"></script>
+            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-widget.js"></script>
         </div>
+        <h2>Pending Webrings   
+                 <p>I submitted applications to be in these webrings but have not heard back yet.</p>
            <center>
             <div id="PikRing">
                 <link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/blue.css">
@@ -292,12 +72,8 @@ ul.buttons img {
                 <script src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
             </div>
         </center>
-        <div id="dsring">
-            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-variables.js"></script>
-            <script src="https://ikaroll.neocities.org/dsring/onion/onionring-widget.js"></script>
-        </div>
-        <h2>Pending Webrings</h2>
-        <p>I submitted applications to be in these webrings but have not heard back yet.</p>
+</h2>
+
         <div class="ermwhatthesigma outset">
             <p>Part of the <a href="https://silly.city/">Silly City Webring</a>!</p>
             <a href="https://silly.city/prev?user=yetiuard">Previous</a>
@@ -328,7 +104,7 @@ ul.buttons img {
             <h2>Buttons & Badges</h2>
             <ul class="buttons">
                 <li><h3>My own button! Hotlinking allowed!</h3></li>
-                <li><img src="./assets/yeti-HOTLINK-ALLOWED.gif" alt="Hotlinking allowed"></li>
+                <li><img src="./assets/yeti-HOTLINK-ALLOWED.gif" alt="Hotlinking allowed"></li><br><br>
                 <li><img src="./assets/badges/88x31nocookie.gif" alt="NO COOKIES ON THIS WEBSITE!!!!"></li>
                 <li><img src="./assets/badges/alltits.png" alt="All gay tits and half a brain :3"></li>
                 <li><img src="./assets/badges/animegay.gif" alt="Evangelion FTWWW"></li>
