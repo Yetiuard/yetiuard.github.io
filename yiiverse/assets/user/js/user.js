@@ -18,7 +18,7 @@ var userContent = {
     country_label: "Country",
     owned_game_device_label: "Devices Owned",
     post_empty: "No posts",
-    favorite_game_genres: [{ genre: "Fighting" }, { genre: "Racing" }, { genre: "Fighting" }],
+    favorite_game_genres: [{ genre: "Fighting" }, { genre: "Racing" }, { genre: "Action" }],
     user_id: "yetiuard",
     favorite_game_genre_label: "Favourite Game Genres",
 };
