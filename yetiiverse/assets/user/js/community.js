@@ -1,5 +1,5 @@
 var communities = {
-    "14866558073026188455": { icon: "14866558073026188450", name: "Rayman® Legends Community" },
+    "sigma": { icon: "14866558073026188450", name: "sigma male heaven" },
     "14866558073268532646": { icon: "14866558073268532636", name: "Mario Kart 8 Community" },
     "6437256808751874782": { icon: "6437256808751874777", name: "Super Mario Maker Community" },
     "6437256809011654736": { icon: "6437256809011654725", name: "The Legend of Zelda: Majora's Mask Community" },

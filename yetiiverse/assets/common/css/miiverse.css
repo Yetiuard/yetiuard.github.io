@@ -13,8 +13,8 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  color: #323232;
-  background: #eee url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwBAMAAADMe/ShAAAAHlBMVEX29vb09PTy8vL19fXz8/Px8fHw8PDv7+/u7u739/dHdNvrAAACSElEQVR4AezYNX7DMBiGcafcKTRlC0hdy7T1Z7iAcS5YOkEl38DeQlNOW24YX63fsxr+Ztm2RmvjMiu2bWbOXPmjtW2A7S8YKlfMCK4lKPzeMoJvYhROHYIJno9gggkmmGCCCSaYYIIJJphgggkmGP/PZQZf4XDHCK5JFFYtE7hXkwWYap0awEMPh8NHA7jPNQprv2EAH5zh8MsTDo9vY/xGxuCeLXFYsVMY7nNZwCm/AcM3scZhnTooPBwfafBYP4JwiZvBfgWDh7Xxkc71DmXjY916hOAbLrMxK7ZuTOfKdxC4ZMf6z1Ui2iEh/2Sdssru8L4dy+zXFVGbuVtntyPxK+cqZRc7wr1Ll0v95/qser1DVZv/yVr5bv10Bczq+ML4Rl/als/ww4WfJptbwuACMbgwhaUVfkvgt6LU1icpdkAAAADAEEz/1EKshHOBgMAnwZ7gNgG9DEwybTKpyZiLRCT6ItqUCJuIYqKoosaJlEsMJBki+ZOElwRfkpqSuElcS9Qnd4LcGN3enRUACMRQDFSDJRzg3wIKuNnNzygYA83rGbx9g1cwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPB/bFgfx7ZH4TWJ7DB0W9w5hwcdgen7MHxfp8r9IFGkKQEEU6WHWWhVZaWZTFdlg9mwWSdiAZRbJABB+FzkHoHcXuQ82cDBtlkQzVSkc1yZEMk2fRKNjZTzetkg0LlhJK1KjAYDAaDwWAwGAwGg8FgcAD3L/H6J4DLS/j67eEOl9GYoKbAV2YAAAAASUVORK5CYII=');
+  color: #cfcfcf;
+  background: #1a1a1a url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwBAMAAADMe/ShAAAAHlBMVEX29vb09PTy8vL19fXz8/Px8fHw8PDv7+/u7u739/dHdNvrAAACSElEQVR4AezYNX7DMBiGcafcKTRlC0hdy7T1Z7iAcS5YOkEl38DeQlNOW24YX63fsxr+Ztm2RmvjMiu2bWbOXPmjtW2A7S8YKlfMCK4lKPzeMoJvYhROHYIJno9gggkmmGCCCSaYYIIJJphgggkmGP/PZQZf4XDHCK5JFFYtE7hXkwWYap0awEMPh8NHA7jPNQprv2EAH5zh8MsTDo9vY/xGxuCeLXFYsVMY7nNZwCm/AcM3scZhnTooPBwfafBYP4JwiZvBfgWDh7Xxkc71DmXjY916hOAbLrMxK7ZuTOfKdxC4ZMf6z1Ui2iEh/2Sdssru8L4dy+zXFVGbuVtntyPxK+cqZRc7wr1Ll0v95/qser1DVZv/yVr5bv10Bczq+ML4Rl/als/ww4WfJptbwuACMbgwhaUVfkvgt6LU1icpdkAAAADAEEz/1EKshHOBgMAnwZ7gNgG9DEwybTKpyZiLRCT6ItqUCJuIYqKoosaJlEsMJBki+ZOElwRfkpqSuElcS9Qnd4LcGN3enRUACMRQDFSDJRzg3wIKuNnNzygYA83rGbx9g1cwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPB/bFgfx7ZH4TWJ7DB0W9w5hwcdgen7MHxfp8r9IFGkKQEEU6WHWWhVZaWZTFdlg9mwWSdiAZRbJABB+FzkHoHcXuQ82cDBtlkQzVSkc1yZEMk2fRKNjZTzetkg0LlhJK1KjAYDAaDwWAwGAwGg8FgcAD3L/H6J4DLS/j67eEOl9GYoKbAV2YAAAAASUVORK5CYII=');
 }
 h1,
 h2,
@@ -51,12 +51,12 @@ li {
   list-style: none;
 }
 a {
-  color: #006eff;
+  color: #1e90ff;
   text-decoration: none;
 }
 img {
   border: 0;
-  color: #ddd;
+  color: #444;
 }
 input,
 label,
@@ -108,13 +108,13 @@ body {
   -o-text-size-adjust: 100%;
   text-size-adjust: 100%;
   word-wrap: break-word;
-  background: #e2e2e2;
+  background: #0e0e0e;
 }
 .trigger:hover {
-  background-color: #f9f9f9;
+  background-color: #444;
 }
 .trigger:active {
-  background-color: #ddd;
+  background-color: #333;
 }
 .trigger a:link:hover,
 .trigger a:visited:hover,
@@ -156,7 +156,7 @@ body {
   min-width: 980px;
   margin: auto 0;
   text-align: left;
-  background-color: #f4f4f4;
+  background-color: #1a1a1a;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAArUlEQVQoFYWQuwrCQBBFd42FlaYQRMRCO3vBNpA/8HNtBbt04gcItnaKoLKegRnYTRYzcLjzuLNh4kMILooh+SeqO6kYJOawhzE0cIBsDLRboRPwsIUFZMMWTM1UWNJWMx4ZPHV4Rq9to9U+OlpeHcHDhjmNF3LzHc01yBdPEOwvkXdiQ6fW7gp9QWM3aD+RWVI5N5X638KF+VuXvqjUru+GEs8SbnCH3gXxJPEDtBsiPW8IwCQAAAAASUVORK5CYII=');
   background-attachment: fixed;
 }
@@ -166,8 +166,8 @@ body {
   height: 54px;
   position: fixed;
   z-index: 20;
-  background: #fff;
-  border-bottom: 2px solid #e5e5e5;
+  background: #1f1f1f;
+  border-bottom: 2px solid #333;
 }
 #global-menu {
   max-width: 950px;
@@ -206,7 +206,7 @@ body {
   font-size: 12px;
 }
 .link-container p a:hover {
-  color: #646464;
+  color: #b4b4b4;
   text-decoration: underline;
 }
 #sidebar + .main-column {
@@ -218,14 +218,14 @@ body {
 }
 .post-list-outline {
   margin: 0 0 15px 0;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -ms-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -o-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -243,7 +243,7 @@ body {
   margin-bottom: 30px;
 }
 #footer {
-  background: #e2e2e2;
+  background: #0e0e0e;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -273,7 +273,7 @@ body {
   float: none;
   text-align: center;
   display: block;
-  background-color: #f6f6f6;
+  background-color: #222;
   padding: 8px 0 5px;
   margin-top: 10px;
 }
@@ -317,14 +317,14 @@ body {
 .album-list.empty.no-content-favorites,
 .list > .no-content.no-content-favorites,
 .no-content.no-content-favorites {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -ms-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -o-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -365,8 +365,8 @@ body {
   line-height: 1;
 }
 h2.label {
-  border-bottom: 3px solid #5ac800;
-  color: #5ac800;
+  border-bottom: 3px solid #ff66cc;
+  color: #ff66cc;
   font-weight: normal;
   font-size: 16px;
   padding: 17px 15px 10px;
@@ -389,8 +389,8 @@ h3.label {
 }
 h2.label-diary_post,
 h2.label-diary {
-  border-bottom: 3px solid #04c9db;
-  color: #00b7d8;
+  border-bottom: 3px solid #ff33aa;
+  color: #ff33aa;
 }
 h2.label-diary_post:before,
 h2.label-diary:before {
@@ -398,8 +398,8 @@ h2.label-diary:before {
 }
 h2.label-artwork_post,
 h2.label-artwork {
-  border-bottom: 3px solid #fcc735;
-  color: #ffae00;
+  border-bottom: 3px solid #ff99cc;
+  color: #ff99cc;
 }
 h2.label-artwork_post:before,
 h2.label-artwork:before {
@@ -407,8 +407,8 @@ h2.label-artwork:before {
 }
 h2.label-topic_post,
 h2.label-topic {
-  border-bottom: 3px solid #e8316e;
-  color: #e8316e;
+  border-bottom: 3px solid #ff3399;
+  color: #ff3399;
 }
 h2.label-topic_post:before,
 h2.label-topic:before {
@@ -423,8 +423,8 @@ h2.label-via_api:before {
   float: left;
 }
 .icon-container .icon {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #1f1f1f;
+  border: 1px solid #444;
   vertical-align: middle;
   width: 56px;
   height: 56px;
@@ -451,13 +451,13 @@ h2.label-via_api:before {
   right: 0;
   width: 36px;
   height: 36px;
-  background: #fff;
+  background: #1f1f1f;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
 }
 .button {
   -webkit-appearance: none;
@@ -466,10 +466,10 @@ h2.label-via_api:before {
   -o-appearance: none;
   appearance: none;
   padding: 12px 15px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom-color: #ccc;
-  background: #f6f6f6;
-  color: #323232;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom-color: #444;
+  background: #2b2b2b;
+  color: #cfcfcf;
   display: block;
   font-size: 14px;
   text-align: center;
@@ -480,27 +480,27 @@ h2.label-via_api:before {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 0 #fff;
-  -moz-box-shadow: inset 0 1px 0 #fff;
-  -ms-box-shadow: inset 0 1px 0 #fff;
-  -o-box-shadow: inset 0 1px 0 #fff;
-  box-shadow: inset 0 1px 0 #fff;
+  -webkit-box-shadow: inset 0 1px 0 #1a1a1a;
+  -moz-box-shadow: inset 0 1px 0 #1a1a1a;
+  -ms-box-shadow: inset 0 1px 0 #1a1a1a;
+  -o-box-shadow: inset 0 1px 0 #1a1a1a;
+  box-shadow: inset 0 1px 0 #1a1a1a;
 }
 .button:hover {
   text-decoration: none!important;
-  background: #f6f6f6;
-  -webkit-box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.1);
-  -ms-box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.1);
-  -o-box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.1);
+  background: #333;
+  -webkit-box-shadow: inset 0 1px 0 #1a1a1a, 0 2px 4px rgba(255,255,255,0.1);
+  -moz-box-shadow: inset 0 1px 0 #1a1a1a, 0 2px 4px rgba(255,255,255,0.1);
+  -ms-box-shadow: inset 0 1px 0 #1a1a1a, 0 2px 4px rgba(255,255,255,0.1);
+  -o-box-shadow: inset 0 1px 0 #1a1a1a, 0 2px 4px rgba(255,255,255,0.1);
+  box-shadow: inset 0 1px 0 #1a1a1a, 0 2px 4px rgba(255,255,255,0.1);
 }
 .arrow-button {
   clear: both;
   display: block;
   padding: 11px 20px 9px 15px;
   background: url('../img/icon-arrow-right.png') no-repeat 97.5% center;
-  color: #323232;
+  color: #cfcfcf;
   -webkit-background-size: 9px 15px;
   -moz-background-size: 9px 15px;
   -ms-background-size: 9px 15px;
@@ -508,14 +508,14 @@ h2.label-via_api:before {
   background-size: 9px 15px;
 }
 .arrow-button:hover {
-  background-color: #f9f9f9;
+  background-color: #444;
 }
 .pager-button {
   display: table;
   *zoom: 1;
   width: 936px;
   margin: 20px auto;
-  background: #f6f6f6;
+  background: #2b2b2b;
   width: auto;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -533,7 +533,7 @@ h2.label-via_api:before {
   vertical-align: middle;
   *display: inline;
   *zoom: 1;
-  color: #323232;
+  color: #cfcfcf;
   text-align: center;
   line-height: 1.2;
   border: none;
@@ -545,7 +545,7 @@ h2.label-via_api:before {
 .pager-button .prev-button {
   padding: 10px;
   margin: 0;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #444;
   width: 40px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
@@ -558,12 +558,12 @@ h2.label-via_api:before {
 }
 .pager-button .prev-button:disabled:before {
   content: "I";
-  color: #ddd;
+  color: #444;
 }
 .pager-button .next-button {
   padding: 10px;
   margin: 0;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #444;
   width: 40px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -576,7 +576,7 @@ h2.label-via_api:before {
 }
 .pager-button .next-button:disabled:before {
   content: "R";
-  color: #ddd;
+  color: #444;
 }
 .list > li,
 .list > div,
@@ -584,7 +584,7 @@ h2.label-via_api:before {
 .list > span {
   *zoom: 1;
   padding: 15px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #444;
   background-repeat: no-repeat;
 }
 .list > li:after,
@@ -599,7 +599,7 @@ h2.label-via_api:before {
 .list > span {
   display: block;
   padding-left: 52px;
-  color: #323232;
+  color: #cfcfcf;
   font-weight: bold;
 }
 .post-list-loading {
@@ -632,7 +632,7 @@ h2.label-via_api:before {
   padding: 0 0 0 10px;
 }
 .community-list .icon-container .icon {
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -643,7 +643,7 @@ h2.label-via_api:before {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  color: #323232;
+  color: #cfcfcf;
   margin-bottom: 2px;
   margin-top: 3px;
   line-height: 1.2;
@@ -719,10 +719,10 @@ h2.label-via_api:before {
   word-wrap: normal;
   height: 34px;
   padding: 0 10px;
-  border-top: 1px solid #81e52e;
-  border-bottom: 1px solid #3caa00;
-  background: #5ac800;
-  color: #fff;
+  border-top: 1px solid #ff66cc;
+  border-bottom: 1px solid #ff3399;
+  background: #ff66cc;
+  color: #1a1a1a;
   font-size: 16px;
   font-weight: bold;
   line-height: 34px;
@@ -741,19 +741,19 @@ h2.label-via_api:before {
   -ms-border-radius: 0 0 5px 5px;
   -o-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #1f1f1f;
+  border: 1px solid #444;
   border-top: none;
 }
 .card {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -ms-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -o-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -762,14 +762,14 @@ h2.label-via_api:before {
 }
 .sidebar-container {
   margin: 0 0 15px 0;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -ms-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  -o-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -781,7 +781,7 @@ h2.label-via_api:before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #444;
   display: block;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -799,7 +799,7 @@ h2.label-via_api:before {
   border-radius: 5px 5px 0 0;
 }
 .sidebar-setting li {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #444;
 }
 .sidebar-setting li:first-child {
   border: none;
@@ -808,19 +808,19 @@ h2.label-via_api:before {
   clear: both;
   padding: 11px 20px 9px 15px;
   background: url('../img/icon-arrow-right.png') no-repeat 97.5% center;
-  color: #323232;
+  color: #cfcfcf;
   -webkit-background-size: 9px 15px;
   -moz-background-size: 9px 15px;
   -ms-background-size: 9px 15px;
   -o-background-size: 9px 15px;
   background-size: 9px 15px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #444;
   display: block;
   padding: 0;
   position: relative;
 }
 .sidebar-setting .sidebar-menu:hover {
-  background-color: #f9f9f9;
+  background-color: #444;
 }
 .sidebar-setting .sidebar-menu:first-child {
   border: none;
@@ -858,7 +858,7 @@ h2.label-via_api:before {
 .sidebar-setting .sidebar-menu.with-count > .post-count span {
   font-size: 12px;
   line-height: 12px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   color: #969696;
   padding: 4px 8px;
   min-width: 30px;
@@ -871,14 +871,14 @@ h2.label-via_api:before {
   border-radius: 3px;
 }
 .sidebar-setting .sidebar-menu.selected {
-  background-color: #f9f9f9;
+  background-color: #444;
 }
 .sidebar-setting .sidebar-menu.selected span {
   font-weight: bold;
 }
 .sidebar-setting .sidebar-menu-post:before {
   content: "p";
-  color: #5ac800;
+  color: #ff66cc;
 }
 .sidebar-setting .sidebar-menu-album:before {
   content: "X";
@@ -904,12 +904,12 @@ h2.label-via_api:before {
 #sidebar-profile-body .icon {
   width: 72px;
   height: 72px;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   margin-top: 0;
-  background-color: #fff;
+  background-color: #1f1f1f;
 }
 #sidebar-profile-body .nick-name {
-  color: #323232;
+  color: #cfcfcf;
   font-size: 18px;
   font-weight: bold;
   display: block;
@@ -938,8 +938,8 @@ h2.label-via_api:before {
   padding: 20px 15px 20px 15px;
 }
 .sidebar-profile .profile-comment {
-  color: #646464;
-  background-color: #f6f6f6;
+  color: #969696;
+  background-color: #2b2b2b;
   margin-bottom: 10px;
   padding: 15px;
   line-height: 1.5;
@@ -963,13 +963,13 @@ h2.label-via_api:before {
   border-collapse: collapse;
 }
 .user-data h4 {
-  color: #fff;
+  color: #1f1f1f;
   width: 1%;
   display: table-cell;
   vertical-align: bottom;
 }
 .user-data h4 span {
-  background-color: #5ac800;
+  background-color: #ff66cc;
   padding: 2px 12px 1px;
   display: block;
   white-space: nowrap;
@@ -982,7 +982,7 @@ h2.label-via_api:before {
   border-radius: 20px;
 }
 .user-data .note {
-  border-bottom: 2px dashed #ddd;
+  border-bottom: 2px dashed #444;
   display: table-cell;
   font-size: 14px;
   text-align: right;
@@ -1060,27 +1060,27 @@ h2.label-via_api:before {
   padding: 0;
 }
 .post .post-subtype-label {
-  color: #323232;
+  color: #cfcfcf;
   float: right;
   margin: -5px -8px -5px 10px;
   padding: 9px 9px;
   font-size: 12px;
 }
 .post .post-subtype-label.post-subtype-label-diary {
-  border-bottom: 2px solid #04c9db;
+  border-bottom: 2px solid #ff33aa;
 }
 .post .post-subtype-label.post-subtype-label-artwork {
-  border-bottom: 2px solid #fcc735;
+  border-bottom: 2px solid #ff99cc;
 }
 .post .post-subtype-label.post-subtype-label-topic {
-  border-bottom: 2px solid #e8316e;
+  border-bottom: 2px solid #ff3399;
 }
 .post .post-subtype-label.post-subtype-label-via-api {
-  border-bottom: 2px solid #5ac800;
+  border-bottom: 2px solid #ff66cc;
 }
 .post .community-container {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #eee;
+  background-color: #2b2b2b;
+  border-bottom: 1px solid #444;
   margin: -15px -15px 15px;
   padding: 5px 8px;
   font-size: 12px;
@@ -1108,7 +1108,7 @@ h2.label-via_api:before {
   font-size: 18px;
 }
 .post .community-container-heading a {
-  color: #323232;
+  color: #cfcfcf;
 }
 .post .post-content-memo img {
   vertical-align: bottom;
@@ -1117,7 +1117,7 @@ h2.label-via_api:before {
   white-space: pre-wrap;
 }
 .user-name {
-  color: #323232;
+  color: #cfcfcf;
   font-weight: bold;
 }
 .timestamp-container {
@@ -1245,7 +1245,7 @@ h2.label-via_api:before {
   padding-right: 20px;
 }
 .post-list > .post-list-outline {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 .post-list .user-name {
@@ -1342,7 +1342,7 @@ h2.label-via_api:before {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #1f1f1f;
   display: block;
   float: left;
   margin: 6px 0.5% 0;
@@ -1395,7 +1395,7 @@ h2.label-via_api:before {
 .album-dialog .album-close-button {
   width: 100%;
   max-width: 100%;
-  background: -webkit-linear-gradient(bottom, #e9e9e9, #fff);
+  background: -webkit-linear-gradient(bottom, #1a1a1a, #222);
   border: 0;
   -webkit-box-shadow: 0 1px 10px rgba(1, 1, 1, 0.4);
   -moz-box-shadow: 0 1px 10px rgba(1, 1, 1, 0.4);
