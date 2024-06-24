@@ -3,7 +3,7 @@ var userContent = {
     skill_class: "advanced",
     birthday_label: "Birthday",
     is_active_in_wiiu: 1,
-    profile_comment: "whats up fellow sigmas (this part of my site is under construction)",
+    profile_comment: "erm what the sigma",
     album_image_close_label: "Close",
     is_active_in_n3ds: 1,
     game_skill_label: "Game Experience",
