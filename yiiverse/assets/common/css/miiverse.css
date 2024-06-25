@@ -6,6 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  cursor: url("https://yetiuard.wtf/yiiverse/assets/user/cursor/wii1.png"), default ;
+}
+a, button {
+  cursor: url("https://yetiuard.wtf/yiiverse/assets/user/cursor/wii2.png"), pointer ;
+}
 body {
   position: relative;
   font-size: 28px;
