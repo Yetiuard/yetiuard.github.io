@@ -1,3 +1,3 @@
 var communities = {
-    "sigma": { icon: "sigma", name: "sigma male heaven" },
+    "rant": { icon: "sigma", name: "Based Rant" },
 };

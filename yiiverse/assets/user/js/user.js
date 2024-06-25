@@ -1,5 +1,5 @@
 var userContent = {
-    album_empty: "You do not have any saved screenshots.",
+    album_empty: "No photos here yet.",
     skill_class: "advanced",
     birthday_label: "Birthday",
     is_active_in_wiiu: 1,
