@@ -12,7 +12,7 @@ var userContent = {
     screen_name: "Yetiuard",
     country: "Romania",
     album_image_label: "Photos",
-    sidebar_menu_posts: [{ data_label: "posts2024", count: 1, label: "2024", selected: 1 }],
+    sidebar_menu_posts: [{ data_label: "posts2024", count: 2, label: "2024", selected: 1 }],
     album_images_count: 7,
     skill: "Sigma male",
     country_label: "Country",
